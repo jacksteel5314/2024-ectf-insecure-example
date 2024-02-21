@@ -172,6 +172,7 @@ void init() {
     // Write Component IDs from flash if first boot e.g. flash unwritten
     if (flash_status.flash_magic != FLASH_MAGIC) {
         print_debug("First boot, setting flash!\n");
+        print_debug("Ollie doesn't know how to use doors");
 
         flash_status.flash_magic = FLASH_MAGIC;
         flash_status.component_cnt = COMPONENT_CNT;
